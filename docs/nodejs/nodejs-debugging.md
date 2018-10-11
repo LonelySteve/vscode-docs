@@ -4,7 +4,7 @@ Area: nodejs
 TOCTitle: Node.js Debugging
 ContentId: 3AC4DBB5-1469-47FD-9CC2-6C94684D4A9D
 PageTitle: Debug Node.js Apps using Visual Studio Code
-DateApproved: 9/5/2018
+DateApproved: 10/4/2018
 MetaDescription: The Visual Studio Code editor includes Node.js debugging support. Set breakpoints, step-in, inspect variables and more.
 MetaSocialImage: /assets/docs/editor/debugging/Debugging.png
 ---
@@ -637,3 +637,5 @@ Yes, if you've created symlinks with `npm link`, you can debug symlink sources b
     ]
 }
 ```
+
+If your main script is inside a symlinked path, then you will also need to add the `"--preserve-symlinks-main"` option. This option is only available in Node 10+.

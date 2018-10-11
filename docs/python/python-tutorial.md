@@ -12,7 +12,9 @@ MetaSocialImage: images/tutorial/social.png
 
 In this tutorial you use Python 3 to create the simplest Python "Hello World" application in Visual Studio Code. By using the Python extension, you make VS Code into a great lightweight Python IDE (which you may find a productive alternative to PyCharm).
 
-> **Note**: You can use VS Code with Python 2 with this tutorial, but you need to make appropriate changes to the code.
+If you have any problems, feel free to file an issue for this tutorial in the [VS Code documentation repository](https://github.com/Microsoft/vscode-docs/issues).
+
+> **Note**: You can use VS Code with Python 2 with this tutorial, but you need to make appropriate changes to the code, which are not covered here.
 
 ## Prerequisites
 
@@ -77,7 +79,7 @@ When you start typing `print`, notice how [IntelliSense](/docs/editor/intellisen
 
 ![IntelliSense appearing for Python code](images/tutorial/intellisense01.png)
 
-IntelliSense and auto-completions work for standard Python modules as well as other packages you've installed into the environment of the selected Python interpreter. It also provides completions for methods available on object types. For example, because the `msg` variable contains a string, IntelliSense provides string methods then you type `msg.`:
+IntelliSense and auto-completions work for standard Python modules as well as other packages you've installed into the environment of the selected Python interpreter. It also provides completions for methods available on object types. For example, because the `msg` variable contains a string, IntelliSense provides string methods when you type `msg.`:
 
 ![IntelliSense appearing for a variable whose type provides methods](images/tutorial/intellisense02.png)
 

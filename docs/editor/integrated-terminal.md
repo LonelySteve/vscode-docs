@@ -4,7 +4,7 @@ Area: editor
 TOCTitle: Integrated Terminal
 ContentId: 7B4DC928-2414-4FC7-9C76-E4A13D6675FE
 PageTitle: Integrated Terminal in Visual Studio Code
-DateApproved: 9/5/2018
+DateApproved: 10/4/2018
 MetaDescription: Visual Studio Code has an integrated terminal so you can work in the shell of your choice without leaving the editor.
 ---
 # Integrated Terminal
@@ -172,6 +172,23 @@ The terminal will attempt to run the selected text.
 ![Run selected text result](images/integrated-terminal/terminal_run_selected_result.png)
 
 If no text is selected in the active editor, the line that the cursor is on is run in the terminal.
+
+## Send text from a keybinding
+
+The `workbench.action.terminal.sendSequence` command can be used to send a specific sequence of text to the terminal, including escape sequences. This enables things like sending arrow keys, enter, cursor moves, etc. The example below shows the sorts of things you can achieve with this feature, it jumps over the word to the left of the cursor (ctrl+left arrow) and presses backspace:
+
+```json
+{
+  "key": "ctrl+u",
+  "command": "workbench.action.terminal.sendSequence",
+  "args": { "text": "\u001b[1;5D\u007f" }
+}
+```
+
+Note that the command only works with the `\u0000` format for using characters via their character code (not `\x00`). You can read more about these hex code and the sequences terminals work with on the following resources:
+
+- [XTerm Control Sequences](http://invisible-island.net/xterm/ctlseqs/ctlseqs.html)
+- [List of C0 and C1 control codes](https://github.com/xtermjs/xterm.js/blob/0e45909c7e79c83452493d2cd46d99c0a0bb585f/src/common/data/EscapeSequences.ts)
 
 ## Rename terminal sessions
 

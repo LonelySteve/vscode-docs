@@ -4,7 +4,7 @@ Area: getstarted
 TOCTitle: Theme Color Reference
 ContentId: 8e03996d-35e9-4e9f-a60e-50d0962231b8
 PageTitle: Visual Studio Code Theme Color Reference
-DateApproved: 9/5/2018
+DateApproved: 10/4/2018
 MetaDescription: Reference for Visual Studio Code theme colors.
 ---
 # Theme Color Reference
@@ -91,10 +91,13 @@ Colors for input controls such as in the Search view or the Find/Replace dialog.
 - `input.placeholderForeground`: Input box foreground color for placeholder text.
 - `inputOption.activeBorder`: Border color of activated options in input fields.
 - `inputValidation.errorBackground`: Input validation background color for error severity.
+- `inputValidation.errorForeground`: Input validation foreground color for error severity.
 - `inputValidation.errorBorder`: Input validation border color for error severity.
 - `inputValidation.infoBackground`: Input validation background color for information severity.
+- `inputValidation.infoForeground`: Input validation foreground color for information severity.
 - `inputValidation.infoBorder`: Input validation border color for information severity.
 - `inputValidation.warningBackground`: Input validation background color for information warning.
+- `inputValidation.warningForeground`: Input validation foreground color for warning severity.
 - `inputValidation.warningBorder`: Input validation border color for warning severity.
 
 ## Scrollbar Control
@@ -141,6 +144,7 @@ The Activity Bar is displayed either on the far left or right of the workbench a
 - `activityBar.background`: Activity Bar background color.
 - `activityBar.dropBackground`: Drag and drop feedback color for the Activity Bar items.
 - `activityBar.foreground`: Activity bar foreground color (for example used for the icons).
+- `activityBar.inactiveForeground`: Activity bar item foreground color when it is inactive.
 - `activityBar.border`: Activity Bar border color with the Side Bar.
 - `activityBarBadge.background`: Activity notification badge background color.
 - `activityBarBadge.foreground`: Activity notification badge foreground color.
@@ -157,6 +161,7 @@ The Side Bar contains views like the Explorer and Search.
 - `sideBarTitle.foreground`: Side Bar title foreground color.
 - `sideBarSectionHeader.background`: Side Bar section header background color.
 - `sideBarSectionHeader.foreground`: Side Bar section header foreground color.
+- `sideBarSectionHeader.border`: Side bar section header border color.
 
 ## Editor Groups & Tabs
 
@@ -460,6 +465,7 @@ The Status Bar is shown in the bottom of the workbench.
 - `menu.selectionForeground`: Foreground color of the selected menu item in menus.
 - `menu.selectionBackground`: Background color of the selected menu item in menus.
 - `menu.selectionBorder`: Border color of the selected menu item in menus.
+- `menu.separatorBackground`: Color of a separator menu item in menus.
 
 ## Notification Colors
 
@@ -581,6 +587,15 @@ The theme colors for breadcrumbs navigation:
 - `breadcrumb.focusForeground`: Color of focused breadcrumb items.
 - `breadcrumb.activeSelectionForeground`: Color of selected breadcrumb items.
 - `breadcrumbPicker.background`: Background color of breadcrumb item picker.
+
+## Snippets
+
+The theme colors for snippets:
+
+- `editor.snippetTabstopHighlightBackground`: Highlight background color of a snippet tabstop.
+- `editor.snippetTabstopHighlightBorder`: Highlight border color of a snippet tabstop.
+- `editor.snippetFinalTabstopHighlightBackground`: Highlight background color of the final tabstop of a snippet.
+- `editor.snippetFinalTabstopHighlightBorder`: Highlight border color of the final tabstop of a snippet.
 
 ## Extension Colors
 

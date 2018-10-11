@@ -1,5 +1,5 @@
 ---
-Order: 6
+Order: 7
 Area: python
 TOCTitle: Django Tutorial
 ContentId: 3c0948f9-85a5-4dd4-a461-59788dbfce4c
@@ -15,6 +15,8 @@ In this tutorial you create a simple Django app with three pages that use a comm
 
 The completed code project from this tutorial can be found on GitHub: [python-sample-vscode-django-tutorial](https://github.com/Microsoft/python-sample-vscode-django-tutorial).
 
+If you have any problems, feel free to file an issue for this tutorial in the [VS Code documentation repository](https://github.com/Microsoft/vscode-docs/issues).
+
 ## Prerequisites
 
 To successfully complete this tutorial, you must do the following (which are the same steps as in the [general Python tutorial](/docs/python/python-tutorial.md)):
@@ -22,7 +24,7 @@ To successfully complete this tutorial, you must do the following (which are the
 1. Install the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python).
 
 1. Install a version of Python 3 (for which this tutorial is written). Options include:
-   - (All operating systems) A download from [python.org](https://www.python.org/downloads/); typically use the **Download Python 3.6.5** button that appears first on the page (or whatever is the latest version).
+   - (All operating systems) A download from [python.org](https://www.python.org/downloads/); typically use the **Download Python 3.7.0** button that appears first on the page (or whatever is the latest version).
    - (Linux) The built-in Python 3 installation works well, but to install other Python packages you must run `sudo apt install python3-pip` in the terminal.
    - (MacOS) An installation through [Homebrew](https://brew.sh/) on macOS using `brew install python3` (the system install of Python on macOS is not supported).
    - (All operating systems) A download from [Anaconda](https://www.anaconda.com/download/) (for data science purposes).
@@ -666,7 +668,7 @@ When using the `db.sqlite3` file, you can also work directly with the database u
 
 By default, Django includes a `db.sqlite3` file for an app's database that's suitable for development work. As described on [When to use SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), SQLite works fine for low to medium traffic sites with fewer than 100K hits/day, but is not recommended for higher volumes. It's also limited to a single computer, so it cannot be used in any multi-server scenario such as load-balancing and geo-replication.
 
-For these reasons, consider using a production-level data store such as PostgreSQL, MySQL, and SQL Server. For information on Django's support for other databases, see [Database setup](https://docs.djangoproject.com/en/2.1/intro/tutorial02/#database-setup). You can also use the [Azure SDK for Python](https://docs.microsoft.com/visualstudio/python/azure-sdk-for-python) to work with Azure storage services like tables and blobs.
+For these reasons, consider using a production-level data store such as [PostgreSQL](https://www.postgresql.org/), [MySQL](https://www.mysql.com/), and [SQL Server](https://www.microsoft.com/en-ca/sql-server/). For information on Django's support for other databases, see [Database setup](https://docs.djangoproject.com/en/2.1/intro/tutorial02/#database-setup). You can also use the [Azure SDK for Python](https://docs.microsoft.com/visualstudio/python/azure-sdk-for-python) to work with Azure storage services like tables and blobs.
 
 ### Define models
 
@@ -916,7 +918,7 @@ Although you can create the file by hand, you can also use the `pip freeze` comm
 
 Anyone (or any build server) that receives a copy of the project needs only to run the `pip install -r requirements.txt` command to reinstall the packages on which the app depends within the active environment.
 
-### Create a super user and enable the administrative interface
+### Create a superuser and enable the administrative interface
 
 By default, Django provides an administrative interface for a web app that's protected by authentication. The interface is implemented through the build-in `django.contrib.admin` app, which is included by default in the project's `INSTALLED_APPS` list (`settings.py`), and authentication is handled with the built-in `django.contrib.auth` app, which is also in `INSTALLED_APPS` by default.
 
@@ -953,6 +955,8 @@ The completed code project from this tutorial can be found on GitHub: [python-sa
 
 In this tutorial, we've only scratched the surface of everything Django can do. Be sure to visit the [Django documentation](https://docs.djangoproject.com/en/2.1/) for many more details on views, templates, data models, URL routing, the administrative interface, using other kinds of databases, deployment to production, and more.
 
+To try your app on a production website, check out the tutorial [Deploy Python using Docker containers](/docs/python/tutorial-deploy-containers.md).
+
 You may also want to review the following articles in the VS Code docs that are relevant to Python:
 
 - [Editing Python code](/docs/python/editing.md)
@@ -960,3 +964,5 @@ You may also want to review the following articles in the VS Code docs that are 
 - [Managing Python environments](/docs/python/environments.md)
 - [Debugging Python](/docs/python/debugging.md)
 - [Unit testing](/docs/python/unit-testing.md)
+
+If you encountered any problems in the course of this tutorial, feel free to file an issue in the [VS Code documentation repository](https://github.com/Microsoft/vscode-docs/issues).
